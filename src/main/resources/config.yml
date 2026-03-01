@@ -1,0 +1,25 @@
+# ==========================================
+#        BanPlugin Config by Deb
+# ==========================================
+
+settings:
+  use-gui: true
+  
+  # Auto-backup active_bans every X hours
+  backup-frequency-hours: 6
+  
+  # Rotate backups, keeping only the most recent
+  max-backups-to-keep: 5
+
+messages:
+  # Placeholders: %player%, %admin%, %reason%
+  ban-broadcast: "&6[BanSentinel] &f%player% &7banned by &e%admin%"
+  
+  silent-prefix: "&7[Silent] "
+
+  # Shown on the kick screen
+  appeal-link: "&eAppeal at &bdiscord.gg/yourserver"
+
+# ==========================================
+# End of Config
+# ==========================================

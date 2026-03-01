@@ -1,0 +1,38 @@
+name: BanSentinel
+version: '1.0.1'
+main: com.deb.simpleban.SimpleBan
+api-version: '1.21'
+author: deb
+website: https://www.spigotmc.org/resources/bansentinel.132974/
+description: High-performance ban management with IP tracking and GUI.
+prefix: BanSentinel
+
+commands:
+  ban:
+    description: Ban a player
+    permission: simpleban.admin
+    usage: /<command> <player> [time] [reason] [-s]
+  ipban:
+    description: IP ban a player
+    permission: simpleban.admin
+    usage: /<command> <player> [time] [reason] [-s]
+  unban:
+    description: Pardon a player or IP
+    permission: simpleban.admin
+    usage: /<command> <player/IP/*>
+  check:
+    description: View player ban history
+    permission: simpleban.admin
+    usage: /<command> <player>
+  punish:
+    description: Open the punishment GUI
+    permission: simpleban.admin
+    usage: /<command> <player>
+  banreload:
+    description: Reload the plugin config
+    permission: simpleban.admin
+
+permissions:
+  simpleban.admin:
+    description: Full access to BanSentinel commands
+    default: op
